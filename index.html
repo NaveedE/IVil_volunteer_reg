@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration - IViL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="images">
+            <img src="image1.png" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <h1>Volunteer Registration</h1>
+        <form action="success.html" method="get">
+            <div class="form-group horizontal">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="rollNumber">Roll Number:</label>
+                    <input type="text" id="rollNumber" name="rollNumber" required>
+                </div>
+            </div>
+            <div class="form-group horizontal">
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="interests">Areas of Interest:</label>
+                <textarea id="interests" name="interests" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="availability">Availability (hr/week):</label>
+                <input type="number" id="availability" name="availability" min="0" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
